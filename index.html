@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="CSS/output.css" rel="stylesheet" />
+  <title>Product and User Cards</title>
+</head>
+<body class="dark:bg-gray-800/95 dark:border-gray-700">
+  <header class="header">
+    <div class="navbar-menu">
+      <div class="menu">
+        <i class="bx bx-menu fs-3"></i>
+      </div>
+      <img src="Images/Logo.ico" alt="Logo" class="logo" />
+    </div>
+    <nav class="navigation-bar  flex text-black ml:border-t-[1px] ml:border-cyan-950">
+      <div class="navigation-bar-menu-X">
+        <i class='bx bx-x'></i>
+      </div>
+      <ul class="navbar  flex items-center justify-center gap-4 text-white">
+        <li>
+          <a href="#" class="text-slate-900 dark:text-white ">
+          Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-900 dark:text-white">
+          All Sneakers
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-900 dark:text-white ">
+          Brand
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-900 dark:text-white">
+          About Us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-900 dark:text-white">
+          Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="input-wrapper">
+      <button class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff"
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z">
+          </path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+        </svg>
+      </button>
+      <input placeholder="search.." class="input" name="text" type="text">
+    </div>
+  </header>
+  <section>
+    <div class="home-nav ml:flex-col">
+      <div class="home-hearder grid gap-5">
+        <div class="text-5xl grid gap-2 font-Staatliches font-semibold uppercase  mr:text-3xl xl2:text-2xl pl:text-xl">
+          <p>Exploring the World of </p>
+          <p>Sneakerswith Jordan,</p>
+          <p>and Converse Chuck</p>
+        </div>
+        <p class="text-[13px]">
+          Explore the Iconic Footwear Legends: From Air Jordans to Nike
+          Classics and Converse Chuck Taylors, Step into the World of
+          Timeless Style and Unrivaled Comfort. Discover the Stories
+          Behind the Sneakers That Define Generations.
+        </p>
+        <button type="button" class="text-white w-max bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+      </div>
+      <div class="image">
+        <img src="Images/air.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="product">
+    <h2 class="text-slate-50 text-4xl font-bold">Products</h2>
+    <div id="products-container" class="mt-7"></div>
+  </section>
+  
+  <section id="users">
+    <h2 class="text-slate-50 text-4xl font-bold">Users</h2>
+    <div id="users-container" class="mt-7"></div>
+  </section>
+
+  <script type="module" src="JS/getData.js"></script>
+  <script type="module" src="JS/randerProduct.js"></script>
+  <script type="module" src="JS/randerUsers.js"></script>
+  <script type="module" src="JS/fetchData.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
